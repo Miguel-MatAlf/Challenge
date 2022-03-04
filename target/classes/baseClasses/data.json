@@ -1,0 +1,33 @@
+{
+	"configuration":{
+		"browser": "chrome",
+		"url" : "https://www.microsoft.com/es-mx/"
+	},
+	"landingPage": {
+		"windows":"//a[@id and contains(text(), 'Windows')]",
+		"searchIcon":"//button[@id='search']",
+		"searchInput":"//input[@type='search']",
+		"espanolSite":"//span[contains(text(), 'Ir a México - Español')]",
+		"buyTab":"//a[@name and contains(text(), 'Comprar')]"
+	},
+	"windowsPage": {
+		"appsSection":"//span[contains(text(), 'Aplicaciones')]",
+		"appsList":"//div[@id]/div[3]/div/div[@class]",
+		"goToPageNumber":"(//div[@id]/div[3]/ul/li)",
+		"appsTitleList":"(//a/div[@id]/h3)",
+		"appsPriceList":"(//a/div[@id]/div)"
+	},
+	"appPage": {
+		"closeRegistration":"//div[@role='button']",
+		"appPrice":"//div[@id]/span",
+		"appPriceDiscount":"//div[@id]/span[2]/span[@aria-hidden]",
+		"threeDotButton":"//div[@role='presentation']/button[2]",
+		"addToCar":"//button[@id='buttonPanel_AddToCartButton']"
+	},
+	"carPage": {
+		"carHeader":"//h2[@class]",
+		"carItems":"(//section/div[@class='cart-items']/div)",
+		"deleteItem":"//button[contains(text(), 'Quitar')]",
+		"emptyCarText":"//section/p[@class]"
+	}
+}
